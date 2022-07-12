@@ -61,11 +61,19 @@ article p {
     margin: 10px;
 }
 
-#star-wars {
-    background-image: url(/assets/images/at-at.jpg);
-    height: 1000px;
-    width: 1000px;
+#about-me {
+    padding: 20px; 
 }
+
+#work article {
+    background-image: url(/assets/images/at-at.jpg);
+}
+
+#work h2 {
+    margin: 12px;
+}
+
+
 h1 {
     font-size: 300%;
 }
