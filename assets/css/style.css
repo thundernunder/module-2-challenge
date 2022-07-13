@@ -2,6 +2,7 @@
     --light: #6e8996;
     --dark: #273d47;
     --white-border: 3px solid white;
+    --grow-box: #8dacbb;
 }
 
 * {
@@ -34,7 +35,7 @@ header #left {
     align-items: center;
 }
 
-header ul li {
+nav ul li {
     display: inline;
     margin: auto 8px;
     text-decoration: none;
@@ -51,26 +52,19 @@ header img {
 main {
     background-color: var(--dark);
 }
+   
 
-section, header {
+article {
+    margin: 10px;
+}
+
+section {
+    padding: 10px;
     display: flex;
     margin: 9px;
     max-width: 900px;
     margin-right: auto;
     margin-left: auto;
-}
-
-article p {
-    margin: 10px;
-}
-
-#about-me {
-    padding: 20px; 
-}
-
-
-#work h2 {
-    margin: 3px;
 }
 
 #star-wars {
@@ -82,68 +76,68 @@ article p {
     margin: 10px;
 }
 
+.work-container-two {
+    display: flex;
+}
+
+#final-fantasy {
+    position:sticky;
+    background-image: url(/assets/images/sephiroth.jpg);
+    background-position: 30%;
+    width: 440px;
+    height: 240px;
+    margin: 10px;
+}
+
+#bay-area-bae {
+    position:sticky;
+    background-image: url(/assets/images/dating-app.jpg);
+    background-position: 90%;
+    width: 440px;
+    height: 240px;
+    margin: 10px;
+}
+
 #work .inner-box {
-    background-color: #8dacbb;
+    background-color: var(--grow-box);
     display: inline-block;
     margin: 10px 10px 10px 0px;
     border-bottom: var(--white-border);
     border-top: var(--white-border);
     border-right: var(--white-border);
-    background-color: #8dacbb;
     opacity: 90%;
     transition: font-size 2s 1s;
+    position: relative;
 }
 
 #work .inner-box:hover {
     font-size: 24px;
 }
 
-#final-fantasy {
-    display: block;
-}
-
 aside {
     border-right: 5px solid var(--light);
+    margin: 8px;
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 200%;
 }
 
 h2 {
     padding: 10px;
-    display: inline-block;
 }
 
 a {
     text-decoration: none;
     color: white;
-    font-size: 300%;
-    padding: 0 10px;
+    font-size: 200%;
+    padding: 0 3px;
 }
-
-.outer-box {
-  
-}
-
-.inner-box {
- 
-}
-
-
 
 @media screen and (max-width: 992px) {
-    main {
-        width: 50%;
-    }   
+  
 }
 
 @media screen and (max-width: 768px) {
 
-    header {
-        flex-direction: column;
-    }
-    main {
-        width: 100%;
-    }   
 }
