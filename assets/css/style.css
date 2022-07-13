@@ -1,6 +1,7 @@
 :root {
     --light: #6e8996;
     --dark: #273d47;
+    --white-border: 3px solid white;
 }
 
 * {
@@ -11,7 +12,9 @@
 body {
     border: 2px solid var(--light);
     background-color: var(--dark);
-   
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -22,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 9px;
-    border: 3px solid white;
+    border: var(--white-border);
     padding: 0 10px;
 }
 
@@ -49,14 +52,14 @@ main {
     background-color: var(--dark);
 }
 
-section {
+section, header {
     display: flex;
     margin: 9px;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-article {
-    border-left: 4px solid var(--light);
-}
 article p {
     margin: 10px;
 }
@@ -65,14 +68,43 @@ article p {
     padding: 20px; 
 }
 
-#work article {
-    background-image: url(/assets/images/at-at.jpg);
-}
 
 #work h2 {
-    margin: 12px;
+    margin: 3px;
 }
 
+#star-wars {
+    position:sticky;
+    background-image: url(/assets/images/at-at.jpg);
+    background-position: 33%;
+    width: 900px;
+    height: 400px;
+    margin: 10px;
+}
+
+#work .inner-box {
+    background-color: #8dacbb;
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+    border-bottom: var(--white-border);
+    border-top: var(--white-border);
+    border-right: var(--white-border);
+    background-color: #8dacbb;
+    opacity: 90%;
+    transition: font-size 2s 1s;
+}
+
+#work .inner-box:hover {
+    font-size: 24px;
+}
+
+#final-fantasy {
+    display: block;
+}
+
+aside {
+    border-right: 5px solid var(--light);
+}
 
 h1 {
     font-size: 300%;
@@ -88,6 +120,14 @@ a {
     color: white;
     font-size: 300%;
     padding: 0 10px;
+}
+
+.outer-box {
+  
+}
+
+.inner-box {
+ 
 }
 
 
