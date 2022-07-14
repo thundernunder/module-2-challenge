@@ -39,6 +39,15 @@ nav ul li {
     color: white;
 }
 
+div ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    width: 900px;
+    font-size: 100%;
+}
+
 header img {
     max-width: 200px;
     max-height: auto;
@@ -49,11 +58,10 @@ main {
     background-color: var(--dark);
 }
    
-#about-me, 
-#work {
-    /* padding: 10px; */
+section {
     display: flex;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 p, div {
@@ -66,9 +74,10 @@ p, div {
 }
 
 aside {
-    width: 100px;
+    width: 120px;
     margin: 20px;
     text-align: right;
+    place-content: top;
 }
 
 a {
@@ -116,6 +125,7 @@ a {
     opacity: 90%;
     transition: font-size 2s 1s;
     position: relative;
+    padding: 6px;
 } 
 
 #inner-box:hover {
