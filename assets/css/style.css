@@ -13,9 +13,6 @@
 body {
     border: 2px solid var(--light);
     background-color: var(--dark);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 header {
@@ -46,25 +43,37 @@ header img {
     max-width: 200px;
     max-height: auto;
     padding: 20px;
-    margin: 0;
 }
 
 main {
     background-color: var(--dark);
 }
    
+#about-me, 
+#work {
+    /* padding: 10px; */
+    display: flex;
+    margin-bottom: 10px;
+}
 
-article {
+p, div {
     margin: 10px;
 }
 
-section {
-    padding: 10px;
-    display: flex;
-    margin: 9px;
+.container {
+    border-left: 5px solid var(--light);
     max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+aside {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    /* padding: 0 3px; */
 }
 
 #star-wars {
@@ -73,21 +82,16 @@ section {
     background-position: 33%;
     width: 900px;
     height: 400px;
-    margin: 10px;
-}
+} 
 
-.work-container-two {
-    display: flex;
-}
-
-#final-fantasy {
+/* #final-fantasy {
     position:sticky;
     background-image: url(/assets/images/sephiroth.jpg);
     background-position: 30%;
     width: 440px;
     height: 240px;
-    margin: 10px;
-}
+    /* margin: 10px; */
+}  */
 
 #bay-area-bae {
     position:sticky;
@@ -95,10 +99,10 @@ section {
     background-position: 90%;
     width: 440px;
     height: 240px;
-    margin: 10px;
-}
+    /* margin: 10px;
+} 
 
-#work .inner-box {
+#inner-box {
     background-color: var(--grow-box);
     display: inline-block;
     margin: 10px 10px 10px 0px;
@@ -108,36 +112,20 @@ section {
     opacity: 90%;
     transition: font-size 2s 1s;
     position: relative;
-}
+} 
 
 #work .inner-box:hover {
     font-size: 24px;
-}
+} 
 
-aside {
-    border-right: 5px solid var(--light);
-    margin: 8px;
-}
 
-h1 {
-    font-size: 200%;
-}
 
-h2 {
-    padding: 10px;
-}
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 200%;
-    padding: 0 3px;
-}
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   
 }
 
 @media screen and (max-width: 768px) {
 
-}
+} */
