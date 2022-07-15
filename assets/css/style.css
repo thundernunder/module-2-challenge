@@ -73,14 +73,16 @@ aside {
 
 #star-wars {
     background-image: url(/assets/images/at-at.jpg);
-    background-position: 33%;
+    background-position: 23%;
     width: 900px;
     height: 400px;
 } 
 
+
+
 #star-wars:hover {
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    box-shadow: 0 0 30px 10px #fff, 0 0 50px 10px var(--grow-box), 0 0 60px;
 }
 
 #ff-bae-box {
@@ -99,7 +101,7 @@ aside {
 
 #final-fantasy:hover {
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    box-shadow: 0 0 30px 10px #fff, 0 0 50px 10px var(--grow-box), 0 0 60px;
 }
 
 
@@ -112,10 +114,10 @@ aside {
  
 #bae:hover {
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    box-shadow: 0 0 30px 10px #fff, 0 0 50px 10px var(--grow-box), 0 0 60px;
 }
 
-#inner-box {
+/* #inner-box {
     background-color: var(--grow-box);
     display: inline-block;
     margin: 10px 10px 10px 0px;
@@ -126,11 +128,30 @@ aside {
     transition: font-size 2s 1s;
     position: relative;
     padding: 6px;
-} 
+}  */
 
-#inner-box:hover {
+/* #inner-box:hover {
     font-size: 24px;
-} 
+}  */
+
+.app-link {
+    display: inline-block;
+    font-size: 20px;
+    background-color: var(--grow-box);
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+    border-bottom: var(--white-border);
+    border-top: var(--white-border);
+    border-right: var(--white-border);
+    opacity: 90%;
+    transition: font-size 2s 1s;
+    position: relative;
+    padding: 10px;
+}
+
+.app-link:hover {
+    font-size: 24px;
+}
 
 .container {
     border-left: 5px solid var(--light);
