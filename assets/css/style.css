@@ -13,6 +13,9 @@
 body {
     border: 2px solid var(--light);
     background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
 }
 
 header {
@@ -32,20 +35,16 @@ header #left {
     align-items: center;
 }
 
-nav ul li {
-    display: inline;
+nav ul {
+    display: flex;
     margin: auto 8px;
     text-decoration: none;
+    list-style: none;
     color: white;
 }
 
-div ul {
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    list-style: none;
-    width: 900px;
-    font-size: 100%;
+nav ul li {
+    padding: 8px;
 }
 
 header img {
@@ -69,6 +68,12 @@ aside {
     margin: 20px;
     text-align: right;
     place-content: top;
+}
+
+#star-wars, 
+#final-fantasy, 
+#bae {
+    margin: 10px;
 }
 
 #star-wars {
@@ -117,23 +122,6 @@ aside {
     box-shadow: 0 0 30px 10px #fff, 0 0 50px 10px var(--grow-box), 0 0 60px;
 }
 
-/* #inner-box {
-    background-color: var(--grow-box);
-    display: inline-block;
-    margin: 10px 10px 10px 0px;
-    border-bottom: var(--white-border);
-    border-top: var(--white-border);
-    border-right: var(--white-border);
-    opacity: 90%;
-    transition: font-size 2s 1s;
-    position: relative;
-    padding: 6px;
-}  */
-
-/* #inner-box:hover {
-    font-size: 24px;
-}  */
-
 .app-link {
     display: inline-block;
     font-size: 20px;
@@ -153,13 +141,23 @@ aside {
     font-size: 24px;
 }
 
+article ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    width: 900px;
+    font-size: 100%;
+}
+
 .container {
     border-left: 5px solid var(--light);
     max-width: 900px;
 }
 
-p, div {
+p {
     margin: 10px;
+    font-size: 130%;
 }
 
 h1, h2 {
@@ -182,13 +180,40 @@ a:hover {
 }
 
 
+@media screen and (max-width: 992px) {
+    
+    #ff-bae-box {
+        display: block;
+    }
 
+    #star-wars {
+        width: 47.5%;
+    }
+                
+    #final-fantasy, #bae {
+        width: 75%;
+    }
 
+    div ul, nav ul {
+        display: block;
+    }
 
-/* @media screen and (max-width: 992px) {
-  
+    aside {
+        width: 50%;                                              
+    }
+
 }
 
 @media screen and (max-width: 768px) {
+    #ff-bae-box {
+        display: block;
+    }
 
-} */
+    #star-wars {
+        width: 47.5%;
+    }
+                
+    #final-fantasy, #bae {
+        width: 75%;
+    }
+}
