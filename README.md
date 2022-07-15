@@ -4,6 +4,7 @@ This Challenge gives me the opportunity to build my first website from scratch i
 
 Building this page allowed me to demonstate my knowledge of the completed HTML and CSS units of the UCI Full-Stack Bootcamp. I enjoyed formatting the different sections of the webpage so they line up. I also enjoyed learning how to apply cool CSS affects like glow and underline using the hover property. 
 
-Here is a screenshot of what the functioning webpage should look like: https://github.com/thundernunder/module-2-challenge/blob/main/assets/images/portfolio-screenshot.png
+Here is a screenshot of what the functioning webpage should look like: ![Website Screenshot](url "https://github.com/thundernunder/module-2-challenge/blob/main/assets/images/portfolio-screenshot.png
+")
 
 Link to the live-site: https://thundernunder.github.io/module-2-challenge/
